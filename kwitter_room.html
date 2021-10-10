@@ -12,6 +12,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
     
     <link rel="stylesheet" type="text/css" href="kwitter_room.css">
     <script src="kwitter_room.js"></script>
@@ -35,30 +39,27 @@
        <img src="5.jpg">
 
     </div>
-    <center>   
-        <div class="col-lg-9">
+    <center>
+        
         <h1>
             CHIT-CHAT
         </h1>
-        <br>
-        <div>
-        <h2 id="welcome" style="color: black; "></h2>
-    </div>
-        <br>
-        <br>
         
-        <div style="background-image: url('note.jpg');" id="div1">
-            
+        
+        
+        
         <h3>#ROOM NAME</h2>
+        <h2 id="welcome" ></h2>
         <input type="text" id="room_name" placeholder="Enter a room name">
+        
         <br>
         <br>
-        <button id="add_room" onclick="add_room()">*Add Room* </button></div>
-        <div id="output">
-
-        </div>
-    </div>
-</center>
+        <button id="add_room" onclick="add_room()">*Add Room* </button>
+        <div id="output"></div>
+        </center>
+    
+        
+    
  
     <div class="col-lg-2" id="logout" onclick="logOut()">
         <button id="logout" class="btn btn-danger">LOGOUT <span class="glyphicon glyphicon-log-out"></span></button>
