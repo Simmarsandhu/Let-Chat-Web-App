@@ -18,7 +18,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="kwitter_room.css">
-    <script src="kwitter_room.js"></script>
+    
     </head>
     <body>
         <div class="col-lg-1">
@@ -47,15 +47,23 @@
         
         
         
-        
+        <h2 id="welcome">welcome</h2>
+        <div style="background-image: url('note.jpg'); width: 700px;">
+            
         <h3>#ROOM NAME</h2>
-        <h2 id="welcome" ></h2>
-        <input type="text" id="room_name" placeholder="Enter a room name">
         
+        <input type="text" id="room_name" placeholder="Enter a room name">
         <br>
         <br>
         <button id="add_room" onclick="add_room()">*Add Room* </button>
-        <div id="output"></div>
+        <br>
+        <br>
+    </div>
+
+        <br>
+        <br>
+        <label id="TRENDING">TRENDING ROOMS </label>
+        <div id="output" style="background-image: url('download.png'); width: 700px;"></div>
         </center>
     
         
@@ -64,6 +72,6 @@
     <div class="col-lg-2" id="logout" onclick="logOut()">
         <button id="logout" class="btn btn-danger">LOGOUT <span class="glyphicon glyphicon-log-out"></span></button>
     </div>
-
+    <script src="kwitter_room.js"></script>
     </body>
 </html>
