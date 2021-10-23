@@ -33,16 +33,18 @@ getData();
 
 function redirectToRoom(rooms){
     console.log("selected_room="+ rooms);
-    localStorage.setItem("room_name", rooms);
+    selected_room= rooms;
+    localStorage.setItem("room_name", selected_room);
 
     window.location="kwitter_page.html";
 }
 function add_room(){
     room=document.getElementById("room_name").value;
+
     localStorage.setItem("room_name" ,room);
     firebase.database().ref("/").child(room).update({purpose:"add room name"});
 
-    window.location ="kwitter_room.html";
+    window.location ="kwitter_page.html";
 }
 function logOut(){
     window.location="index.html";
